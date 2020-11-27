@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06f2c7f5-bfbe-42d7-bff8-a39cb56bf0db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/EE475-Final-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EE475-Final-Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Layers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +24,9 @@
   </component>
   <component name="JupyterTrust" id="28774e7b-a68e-4c0f-85c2-b899861d1bb9" />
   <component name="ProjectId" id="1kjK35mG0nZA23uBHsLPQatf8dp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -62,7 +63,7 @@
       <workItem from="1606237495022" duration="1142000" />
       <workItem from="1606251555157" duration="963000" />
       <workItem from="1606297125096" duration="1333000" />
-      <workItem from="1606483674978" duration="3829000" />
+      <workItem from="1606483674978" duration="5867000" />
     </task>
     <servers />
   </component>
