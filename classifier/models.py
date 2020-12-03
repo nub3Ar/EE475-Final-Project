@@ -53,3 +53,7 @@ class CNN_DropC(keras.Model):
 
     def call(self, inputs):
         return self.model(inputs)
+
+
+def try_connect():
+    return "Connection to models"
