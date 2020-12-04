@@ -9,9 +9,10 @@ import os
 print(os.getcwd())
 
 def CNN_prediction(images):
-    '''
-    param: (list of list)/(single nested list) 28*28 matrices
-    return: (list) probability distribution of
+    ''' 
+    param: (list of list of list)/(single nested list) list of 28*28 matrices 
+    return: probs (list of lists) list of probability distribution as predicted from the model 
+            preds (list) the predicted figure judging by the highest probability 
     '''
     cnn = CNN()
     cnn.load_weights('weights/ckpt_CNN')
@@ -21,7 +22,10 @@ def CNN_prediction(images):
     return probs, preds
 
 def CNN_Dropout_prediction(images):
-    '''
+    ''' 
+    param: (list of list of list)/(single nested list) list of 28*28 matrices 
+    return: probs (list of lists) list of probability distribution as predicted from the model 
+            preds (list) the predicted figure judging by the highest probability 
     '''
     cnn_dropout = CNN_Drop()
     cnn_dropout.load_weights('weights/ckpt_CNN_Drop')
@@ -30,7 +34,10 @@ def CNN_Dropout_prediction(images):
     return probs, preds
 
 def CNN_BatchNromalized_prediction(images):
-    '''
+    ''' 
+    param: (list of list of list)/(single nested list) list of 28*28 matrices 
+    return: probs (list of lists) list of probability distribution as predicted from the model 
+            preds (list) the predicted figure judging by the highest probability 
     '''
     cnn_bn = CNN_BN()
     cnn_bn.load_weights('weights/ckpt_CNN_BN')
