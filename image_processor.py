@@ -2,9 +2,9 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 WHITE = [255,255,255]
-BOUNDARY_BUFFER = 28
+BOUNDARY_BUFFER = 14
 
-def tranformation(path):
+def transformation(path):
     # helper
     def multipleOf(base, number):
         multiple = 0
@@ -108,7 +108,7 @@ def tranformation(path):
                     for sub_col in range(sub_upper, sub_lower):
                         pixel_val = min(pixel_val, digit[sub_row][sub_col][0])
                         
-                scaled_digit[row][col] = [pixel_val, pixel_val, pixel_val]
+                scaled_digit[row][col] = [255-pixel_val]
 
         result.append(scaled_digit)
     return result

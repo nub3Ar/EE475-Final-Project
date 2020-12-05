@@ -2,11 +2,8 @@ import tensorflow as tf
 import keras
 from keras import layers
 import numpy as np
-from models import CNN, CNN_BN, CNN_Drop
+from classifier.models import CNN, CNN_BN, CNN_Drop
 
-import os
-
-print(os.getcwd())
 
 def CNN_prediction(images):
     ''' 
@@ -18,6 +15,7 @@ def CNN_prediction(images):
     cnn.load_weights('weights/ckpt_CNN')
     probs = cnn.predict(images)
     preds = np.argmax(probs, axis=1)
+    probs = np.max(probs, axis=1)
 
     return probs, preds
 
@@ -31,6 +29,7 @@ def CNN_Dropout_prediction(images):
     cnn_dropout.load_weights('weights/ckpt_CNN_Drop')
     probs = cnn_dropout.predict(images)
     preds = np.argmax(probs, axis=1)
+    probs = np.max(probs, axis=1)
     return probs, preds
 
 def CNN_BatchNromalized_prediction(images):
@@ -43,6 +42,7 @@ def CNN_BatchNromalized_prediction(images):
     cnn_bn.load_weights('weights/ckpt_CNN_BN')
     probs = cnn_bn.predict(images)
     preds = np.argmax(probs, axis=1)
+    probs = np.max(probs, axis=1)
     return probs, preds
 
 
