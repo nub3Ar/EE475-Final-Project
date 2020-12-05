@@ -1,5 +1,4 @@
 import keras
-from layers import DropConnect
 
 INPUT_SHAPE = (28,28,1)
 NUM_CLASSES = 10
