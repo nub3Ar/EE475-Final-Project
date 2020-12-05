@@ -4,10 +4,12 @@
     <title>Image Upload</title>
   </head>
   <body>
-    <h1>Image Upload</h1>
-    <form method="POST" action="" enctype="multipart/form-data">
+    <h1>Image Upload & Model Selection</h1>
+    <h3>Please upload an image</h3>
+    <form method="POST" action="/result" enctype="multipart/form-data" >
       <p><input type="file" name="file" accept="image/*"></p>
-      <p><input type="submit" value="Submit"></p>
+      <p><h3>You have three models to choose from, please choose one and hit enter</h3></p>
+      <p><input type="number" id="model" name="model" min="1" max="3"></p>
     </form>
   </body>
 </html>
