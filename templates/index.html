@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Image Upload</title>
+  </head>
+  <body>
+    <h1>Image Upload & Model Selection</h1>
+    <h3>Please upload an image</h3>
+    <form method="POST" action="/result" enctype="multipart/form-data" >
+      <p><input type="file" name="file" accept="image/*"></p>
+      <p><h3>You have three models to choose from, please choose one and hit enter</h3></p>
+      <select id="model" name="model">
+        <option value="CNN">CNN</option>
+        <option value="CNN_Dropout">CNN_Dropout</option>
+        <option value="CNN_Batch_Nromalized">CNN_Batch_Nromalized</option>
+        
+      </select>
+      <p><input type="submit" name="model" id='model'></p>
+    </form>
+
+  </body>
+</html>
