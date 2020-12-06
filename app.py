@@ -2,7 +2,7 @@ import os
 print(os.getcwd())
 
 from flask import Flask, render_template, request, redirect, url_for
-from image_processor import transformation
+from utils.image_processor import transformation
 from classifier.Main import CNN_prediction, CNN_Dropout_prediction, CNN_BatchNromalized_prediction
 import numpy as np
 
